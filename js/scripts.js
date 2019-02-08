@@ -29,7 +29,7 @@ window.onload = function () {
 
 		if(snakeLen[0] !== snakeLen[1]) {
 			random.create('fruit');
-			intervall = intervall - 50;
+			intervall = intervall*.95;
 			clearInterval(timer);
 			timer =	setInterval(snakeMove, intervall);
 		}
